@@ -14,7 +14,6 @@
     },
     {
       "description": "super long\ntext with **bold** \n # bold baby",
-      "layout": null,
       "title": "Custom paragraph default layout - row",
       "type": "paragraph"
     },
@@ -29,58 +28,63 @@
       "type": "heading"
     },
     {
+      "description": "**Markdown** description",
       "instances": [
         {
-          "change": null,
           "measure": "Metric",
           "period": "Year",
-          "suffix": "m",
-          "target": null,
-          "value": "$99k"
+          "value": "$99k",
+          "valueSufix": "m"
         },
         {
           "change": {
             "arrow": "up",
             "sentiment": "negative",
-            "suffix": null,
             "value": "$255k"
           },
           "measure": "Metric",
           "period": "Year",
-          "suffix": "m",
-          "target": null,
-          "value": "$99k"
+          "value": "$99k",
+          "valueSufix": "m"
+        },
+        {
+          "change": {
+            "arrow": "up",
+            "sentiment": "negative",
+            "value": "$255k"
+          },
+          "measure": "Metric",
+          "period": "Year",
+          "sentiment": "positive",
+          "value": "$99k",
+          "valueSufix": "m"
         }
       ],
-      "layout": null,
       "title": "KPI row",
       "type": "kpi"
     },
     {
       "instances": [
         {
-          "change": null,
           "measure": "Metric",
           "period": "Year",
-          "suffix": "m",
-          "target": null,
-          "value": "$99k"
+          "value": "$99k",
+          "valueSufix": "m"
         },
         {
           "change": {
             "arrow": "up",
             "sentiment": "negative",
-            "suffix": null,
             "value": "$255k"
           },
           "measure": "Metric",
           "period": "Year",
-          "suffix": "m",
           "target": {
             "percentage": 59.0,
             "value": "200"
           },
-          "value": "$99k"
+          "value": "$99k",
+          "valueSufix": "m"
         }
       ],
       "layout": "column",
@@ -144,8 +148,7 @@
           "Quarter": "Q2"
         }
       ],
-      "description": null,
-      "layout": null,
+      "description": "**Markdown** description",
       "title": "Scatter",
       "type": "scatter"
     },
@@ -165,7 +168,7 @@
         },
         {
           "field": "Quarter",
-          "from_": "Q1",
+          "from": "Q1",
           "role": "series",
           "to": "Q2"
         }
@@ -208,8 +211,7 @@
           "Quarter": "Q2"
         }
       ],
-      "description": null,
-      "layout": null,
+      "description": "**Markdown** description",
       "title": "Scatter with series",
       "type": "scatter"
     },
@@ -287,8 +289,7 @@
           "Size by metric": 100
         }
       ],
-      "description": null,
-      "layout": null,
+      "description": "**Markdown** description",
       "title": "Bubble",
       "type": "bubble"
     },
@@ -312,7 +313,7 @@
         },
         {
           "field": "Quarter",
-          "from_": "Q1",
+          "from": "Q1",
           "role": "series",
           "to": "Q2"
         }
@@ -368,8 +369,7 @@
           "Size by metric": 100
         }
       ],
-      "description": null,
-      "layout": null,
+      "description": "**Markdown** description",
       "title": "Bubble with series",
       "type": "bubble"
     },
@@ -510,9 +510,6 @@
           "Quarter": "Q2"
         }
       ],
-      "description": null,
-      "layout": null,
-      "settings": null,
       "title": "Dot",
       "type": "dot"
     },
@@ -528,7 +525,7 @@
         },
         {
           "field": "Quarter",
-          "from_": "Q1",
+          "from": "Q1",
           "role": "series",
           "to": "Q2"
         }
@@ -655,9 +652,6 @@
           "Quarter": "Q2"
         }
       ],
-      "description": null,
-      "layout": null,
-      "settings": null,
       "title": "Dot with series",
       "type": "dot"
     },
@@ -714,9 +708,6 @@
           "Variance": "-100"
         }
       ],
-      "description": null,
-      "layout": null,
-      "settings": null,
       "title": "Line",
       "type": "line"
     },
@@ -773,12 +764,8 @@
           "Variance": "-100"
         }
       ],
-      "description": null,
-      "layout": null,
       "settings": {
-        "display": "target",
-        "targetFillArea": null,
-        "variance": null
+        "display": "target"
       },
       "title": "Line with target",
       "type": "line"
@@ -836,12 +823,9 @@
           "Variance": "-100"
         }
       ],
-      "description": null,
-      "layout": null,
       "settings": {
         "display": "target",
-        "targetFillArea": "above",
-        "variance": null
+        "targetFillArea": "above"
       },
       "title": "Line with target fill area above",
       "type": "line"
@@ -899,11 +883,8 @@
           "Variance": "-100"
         }
       ],
-      "description": null,
-      "layout": null,
       "settings": {
         "display": "target",
-        "targetFillArea": null,
         "variance": "absolute"
       },
       "title": "Line with target absolute variance",
@@ -962,14 +943,65 @@
           "Variance": "-100"
         }
       ],
-      "description": null,
-      "layout": null,
       "settings": {
         "display": "basic",
-        "targetFillArea": null,
         "variance": "customBar"
       },
       "title": "Line with custom variance",
+      "type": "line"
+    },
+    {
+      "attributes": [
+        {
+          "field": "Company name",
+          "role": "element"
+        },
+        {
+          "field": "Amount",
+          "role": "y"
+        }
+      ],
+      "data": [
+        {
+          "Amount": "100",
+          "Company name": "A",
+          "Target": "100",
+          "Variance": "100"
+        },
+        {
+          "Amount": "200",
+          "Company name": "B",
+          "Target": "100",
+          "Variance": "100"
+        },
+        {
+          "Amount": "100",
+          "Company name": "C",
+          "Target": "300",
+          "Variance": "100"
+        },
+        {
+          "Amount": "50",
+          "Company name": "D",
+          "Target": "100",
+          "Variance": "500"
+        },
+        {
+          "Amount": "-100",
+          "Company name": "E",
+          "Target": "50",
+          "Variance": "100"
+        },
+        {
+          "Amount": "-500",
+          "Company name": "F",
+          "Target": "100",
+          "Variance": "-100"
+        }
+      ],
+      "description": "**Markdown** description",
+      "layout": "row",
+      "title": "Line with row",
       "type": "line"
     },
     {
@@ -1109,11 +1141,8 @@
           "Quarter": "Q2"
         }
       ],
-      "description": null,
-      "layout": null,
       "settings": {
-        "display": "basic",
-        "variance": null
+        "display": "basic"
       },
       "title": "Column",
       "type": "column"
@@ -1130,7 +1159,7 @@
         },
         {
           "field": "Quarter",
-          "from_": "Q1",
+          "from": "Q1",
           "role": "series",
           "to": "Q2"
         }
@@ -1257,11 +1286,8 @@
           "Quarter": "Q2"
         }
       ],
-      "description": null,
-      "layout": null,
       "settings": {
-        "display": "change",
-        "variance": null
+        "display": "change"
       },
       "title": "Column with series change",
       "type": "column"
@@ -1278,7 +1304,7 @@
         },
         {
           "field": "Quarter",
-          "from_": "Q1",
+          "from": "Q1",
           "role": "series",
           "to": "Q2"
         }
@@ -1405,11 +1431,8 @@
           "Quarter": "Q2"
         }
       ],
-      "description": null,
-      "layout": null,
       "settings": {
-        "display": "target",
-        "variance": null
+        "display": "target"
       },
       "title": "Column with series target",
       "type": "column"
@@ -1426,7 +1449,7 @@
         },
         {
           "field": "Quarter",
-          "from_": "Q1",
+          "from": "Q1",
           "role": "series",
           "to": "Q2"
         }
@@ -1553,8 +1576,6 @@
           "Quarter": "Q2"
         }
       ],
-      "description": null,
-      "layout": null,
       "settings": {
         "display": "change",
         "variance": "absolute"
@@ -1699,11 +1720,8 @@
           "Quarter": "Q2"
         }
       ],
-      "description": null,
-      "layout": null,
       "settings": {
-        "display": "basic",
-        "variance": null
+        "display": "basic"
       },
       "title": "Bar",
       "type": "bar"
@@ -1720,7 +1738,7 @@
         },
         {
           "field": "Quarter",
-          "from_": "Q1",
+          "from": "Q1",
           "role": "series",
           "to": "Q2"
         }
@@ -1847,11 +1865,8 @@
           "Quarter": "Q2"
         }
       ],
-      "description": null,
-      "layout": null,
       "settings": {
-        "display": "change",
-        "variance": null
+        "display": "change"
       },
       "title": "Bar with series change",
       "type": "bar"
@@ -1868,7 +1883,7 @@
         },
         {
           "field": "Quarter",
-          "from_": "Q1",
+          "from": "Q1",
           "role": "series",
           "to": "Q2"
         }
@@ -1995,11 +2010,8 @@
           "Quarter": "Q2"
         }
       ],
-      "description": null,
-      "layout": null,
       "settings": {
-        "display": "target",
-        "variance": null
+        "display": "target"
       },
       "title": "Bar with series target",
       "type": "bar"
@@ -2016,7 +2028,7 @@
         },
         {
           "field": "Quarter",
-          "from_": "Q1",
+          "from": "Q1",
           "role": "series",
           "to": "Q2"
         }
@@ -2143,8 +2155,6 @@
           "Quarter": "Q2"
         }
       ],
-      "description": null,
-      "layout": null,
       "settings": {
         "display": "change",
         "variance": "absolute"

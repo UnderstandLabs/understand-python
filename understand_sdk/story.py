@@ -141,12 +141,14 @@ class KpiInstance(BaseModel):
     period: Optional[str] = None
     value: Optional[str] = None
     suffix: Optional[str] = Field(default=None, alias="valueSufix")  # TODO(vojta) fix typo on API
+    sentiment: Optional[KpiSentiment] = None
     change: Optional[KpiChange] = None
     target: Optional[KpiTarget] = None
 
 
 class KpiSlide(SlideWithLayout):
     type: Literal["kpi"] = "kpi"
+    description: Optional[str] = None
     instances: List[KpiInstance]
 
 

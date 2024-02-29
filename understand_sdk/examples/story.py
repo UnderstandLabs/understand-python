@@ -99,6 +99,7 @@ def _story_kpi_slides() -> List[Slide]:
         HeadingSlide(title="KPI examples"),
         KpiSlide(
             title="KPI row",
+            description="**Markdown** description",
             instances=[
                 KpiInstance(
                     measure="Metric",
@@ -111,6 +112,18 @@ def _story_kpi_slides() -> List[Slide]:
                     period="Year",
                     value="$99k",
                     suffix="m",
+                    change=KpiChange(
+                        value="$255k",
+                        arrow=KpiArrow.UP,
+                        sentiment=KpiSentiment.NEGATIVE,
+                    ),
+                ),
+                KpiInstance(
+                    measure="Metric",
+                    period="Year",
+                    value="$99k",
+                    suffix="m",
+                    sentiment=KpiSentiment.POSITIVE,
                     change=KpiChange(
                         value="$255k",
                         arrow=KpiArrow.UP,
@@ -151,6 +164,7 @@ def _story_scatter_slides() -> List[Slide]:
         HeadingSlide(title="Scatter examples"),
         ScatterSlide(
             title="Scatter",
+            description="**Markdown** description",
             attributes=[
                 ElementAttribute(field="Company name"),
                 XAttribute(field="Employees"),
@@ -160,6 +174,7 @@ def _story_scatter_slides() -> List[Slide]:
         ),
         ScatterSlide(
             title="Scatter with series",
+            description="**Markdown** description",
             attributes=[
                 ElementAttribute(field="Company name"),
                 XAttribute(field="Employees"),
@@ -176,6 +191,7 @@ def _story_bubble_slides() -> List[Slide]:
         HeadingSlide(title="Bubble examples"),
         BubbleSlide(
             title="Bubble",
+            description="**Markdown** description",
             attributes=[
                 ElementAttribute(field="Company name"),
                 XAttribute(field="Employees"),
@@ -186,6 +202,7 @@ def _story_bubble_slides() -> List[Slide]:
         ),
         BubbleSlide(
             title="Bubble with series",
+            description="**Markdown** description",
             attributes=[
                 ElementAttribute(field="Company name"),
                 XAttribute(field="Employees"),
@@ -269,6 +286,16 @@ def _story_line_slides() -> List[Slide]:
                 ElementAttribute(field="Company name"),
                 YAttribute(field="Amount"),
                 VarianceAttribute(field="Variance"),
+            ],
+            data=EXAMPLE_DATA_LINE,
+        ),
+        LineSlide(
+            layout=SlideLayout.ROW,
+            title="Line with row",
+            description="**Markdown** description",
+            attributes=[
+                ElementAttribute(field="Company name"),
+                YAttribute(field="Amount"),
             ],
             data=EXAMPLE_DATA_LINE,
         ),
