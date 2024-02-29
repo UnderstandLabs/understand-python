@@ -1,0 +1,2157 @@
+{
+  "channels": [
+    "general",
+    "cashflow"
+  ],
+  "slides": [
+    {
+      "title": "Example story with channel\n2024-02-01",
+      "type": "cover"
+    },
+    {
+      "title": "Paragraph examples",
+      "type": "heading"
+    },
+    {
+      "description": "super long\ntext with **bold** \n # bold baby",
+      "layout": null,
+      "title": "Custom paragraph default layout - row",
+      "type": "paragraph"
+    },
+    {
+      "description": "super long\ntext with **bold** \n # bold baby",
+      "layout": "column",
+      "title": "Custom paragraph column layout",
+      "type": "paragraph"
+    },
+    {
+      "title": "KPI examples",
+      "type": "heading"
+    },
+    {
+      "instances": [
+        {
+          "change": null,
+          "measure": "Metric",
+          "period": "Year",
+          "suffix": "m",
+          "target": null,
+          "value": "$99k"
+        },
+        {
+          "change": {
+            "arrow": "up",
+            "sentiment": "negative",
+            "suffix": null,
+            "value": "$255k"
+          },
+          "measure": "Metric",
+          "period": "Year",
+          "suffix": "m",
+          "target": null,
+          "value": "$99k"
+        }
+      ],
+      "layout": null,
+      "title": "KPI row",
+      "type": "kpi"
+    },
+    {
+      "instances": [
+        {
+          "change": null,
+          "measure": "Metric",
+          "period": "Year",
+          "suffix": "m",
+          "target": null,
+          "value": "$99k"
+        },
+        {
+          "change": {
+            "arrow": "up",
+            "sentiment": "negative",
+            "suffix": null,
+            "value": "$255k"
+          },
+          "measure": "Metric",
+          "period": "Year",
+          "suffix": "m",
+          "target": {
+            "percentage": 59.0,
+            "value": "200"
+          },
+          "value": "$99k"
+        }
+      ],
+      "layout": "column",
+      "title": "KPI column & with target",
+      "type": "kpi"
+    },
+    {
+      "title": "Scatter examples",
+      "type": "heading"
+    },
+    {
+      "attributes": [
+        {
+          "field": "Company name",
+          "role": "element"
+        },
+        {
+          "field": "Employees",
+          "role": "x"
+        },
+        {
+          "field": "Amount",
+          "role": "y"
+        }
+      ],
+      "data": [
+        {
+          "Amount": "520490.0",
+          "Company name": "Blockers Mueller Inc.",
+          "Employees": 99,
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "420490.0",
+          "Company name": "Blockers Mueller Inc.",
+          "Employees": 40,
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "447273.0",
+          "Company name": "Comic Prime Inc.",
+          "Employees": 20,
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "345540.0",
+          "Company name": "Cupar Times Inc.",
+          "Employees": 1,
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "185344.0",
+          "Company name": "Bryson Wirral Ltd.",
+          "Employees": 100,
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "133427.0",
+          "Company name": "Necessities Caunt Co.",
+          "Employees": 200,
+          "Quarter": "Q2"
+        }
+      ],
+      "description": null,
+      "layout": null,
+      "title": "Scatter",
+      "type": "scatter"
+    },
+    {
+      "attributes": [
+        {
+          "field": "Company name",
+          "role": "element"
+        },
+        {
+          "field": "Employees",
+          "role": "x"
+        },
+        {
+          "field": "Amount",
+          "role": "y"
+        },
+        {
+          "field": "Quarter",
+          "from_": "Q1",
+          "role": "series",
+          "to": "Q2"
+        }
+      ],
+      "data": [
+        {
+          "Amount": "520490.0",
+          "Company name": "Blockers Mueller Inc.",
+          "Employees": 99,
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "420490.0",
+          "Company name": "Blockers Mueller Inc.",
+          "Employees": 40,
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "447273.0",
+          "Company name": "Comic Prime Inc.",
+          "Employees": 20,
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "345540.0",
+          "Company name": "Cupar Times Inc.",
+          "Employees": 1,
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "185344.0",
+          "Company name": "Bryson Wirral Ltd.",
+          "Employees": 100,
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "133427.0",
+          "Company name": "Necessities Caunt Co.",
+          "Employees": 200,
+          "Quarter": "Q2"
+        }
+      ],
+      "description": null,
+      "layout": null,
+      "title": "Scatter with series",
+      "type": "scatter"
+    },
+    {
+      "title": "Bubble examples",
+      "type": "heading"
+    },
+    {
+      "attributes": [
+        {
+          "field": "Company name",
+          "role": "element"
+        },
+        {
+          "field": "Employees",
+          "role": "x"
+        },
+        {
+          "field": "Size by metric",
+          "role": "sizeBy"
+        },
+        {
+          "field": "Amount",
+          "role": "y"
+        }
+      ],
+      "data": [
+        {
+          "Amount": "520490.0",
+          "Company name": "Blockers Mueller Inc.",
+          "Employees": 99,
+          "Quarter": "Q2",
+          "Size by metric": 100
+        },
+        {
+          "Amount": "320490.0",
+          "Company name": "Blockers Mueller Inc.",
+          "Employees": 59,
+          "Quarter": "Q1",
+          "Size by metric": 10
+        },
+        {
+          "Amount": "447273.0",
+          "Company name": "Comic Prime Inc.",
+          "Employees": 20,
+          "Quarter": "Q2",
+          "Size by metric": 20
+        },
+        {
+          "Amount": "147273.0",
+          "Company name": "Comic Prime Inc.",
+          "Employees": 90,
+          "Quarter": "Q1",
+          "Size by metric": 20
+        },
+        {
+          "Amount": "345540.0",
+          "Company name": "Cupar Times Inc.",
+          "Employees": 1,
+          "Quarter": "Q2",
+          "Size by metric": 200
+        },
+        {
+          "Amount": "185344.0",
+          "Company name": "Bryson Wirral Ltd.",
+          "Employees": 100,
+          "Quarter": "Q2",
+          "Size by metric": 150
+        },
+        {
+          "Amount": "133427.0",
+          "Company name": "Necessities Caunt Co.",
+          "Employees": 200,
+          "Quarter": "Q2",
+          "Size by metric": 100
+        }
+      ],
+      "description": null,
+      "layout": null,
+      "title": "Bubble",
+      "type": "bubble"
+    },
+    {
+      "attributes": [
+        {
+          "field": "Company name",
+          "role": "element"
+        },
+        {
+          "field": "Employees",
+          "role": "x"
+        },
+        {
+          "field": "Amount",
+          "role": "y"
+        },
+        {
+          "field": "Size by metric",
+          "role": "sizeBy"
+        },
+        {
+          "field": "Quarter",
+          "from_": "Q1",
+          "role": "series",
+          "to": "Q2"
+        }
+      ],
+      "data": [
+        {
+          "Amount": "520490.0",
+          "Company name": "Blockers Mueller Inc.",
+          "Employees": 99,
+          "Quarter": "Q2",
+          "Size by metric": 100
+        },
+        {
+          "Amount": "320490.0",
+          "Company name": "Blockers Mueller Inc.",
+          "Employees": 59,
+          "Quarter": "Q1",
+          "Size by metric": 10
+        },
+        {
+          "Amount": "447273.0",
+          "Company name": "Comic Prime Inc.",
+          "Employees": 20,
+          "Quarter": "Q2",
+          "Size by metric": 20
+        },
+        {
+          "Amount": "147273.0",
+          "Company name": "Comic Prime Inc.",
+          "Employees": 90,
+          "Quarter": "Q1",
+          "Size by metric": 20
+        },
+        {
+          "Amount": "345540.0",
+          "Company name": "Cupar Times Inc.",
+          "Employees": 1,
+          "Quarter": "Q2",
+          "Size by metric": 200
+        },
+        {
+          "Amount": "185344.0",
+          "Company name": "Bryson Wirral Ltd.",
+          "Employees": 100,
+          "Quarter": "Q2",
+          "Size by metric": 150
+        },
+        {
+          "Amount": "133427.0",
+          "Company name": "Necessities Caunt Co.",
+          "Employees": 200,
+          "Quarter": "Q2",
+          "Size by metric": 100
+        }
+      ],
+      "description": null,
+      "layout": null,
+      "title": "Bubble with series",
+      "type": "bubble"
+    },
+    {
+      "title": "Dot examples",
+      "type": "heading"
+    },
+    {
+      "attributes": [
+        {
+          "field": "Company name",
+          "role": "element"
+        },
+        {
+          "field": "Amount",
+          "role": "y"
+        }
+      ],
+      "data": [
+        {
+          "Amount": "520490.0",
+          "Company name": "Blockers Mueller Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "420490.0",
+          "Company name": "Blockers Mueller Inc.",
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "447273.0",
+          "Company name": "Comic Prime Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "347273.0",
+          "Company name": "Comic Prime Inc.",
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "345540.0",
+          "Company name": "Cupar Times Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "245540.0",
+          "Company name": "Cupar Times Inc.",
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "185344.0",
+          "Company name": "Bryson Wirral Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "133427.0",
+          "Company name": "Necessities Caunt Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "129326.0",
+          "Company name": "Maintenence Florence Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "118896.0",
+          "Company name": "Herbert Geotechnical Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "77750.0",
+          "Company name": "Currie Hickinbottom Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "55664.0",
+          "Company name": "Pickering Precision Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "38667.0",
+          "Company name": "Bunting Letterbox Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "25650.0",
+          "Company name": "Stratos Pack Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "24898.0",
+          "Company name": "Wisbech Wallpaper Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "18690.0",
+          "Company name": "Olga Biosystems Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "15352.0",
+          "Company name": "Kingdon Denton Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "13530.0",
+          "Company name": "Sants Caledonia Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "10542.0",
+          "Company name": "Norie Wilts Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "2778.0",
+          "Company name": "Suzanna Batt Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "2516.0",
+          "Company name": "Runner Driven Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "0.0",
+          "Company name": "Jenson Simon Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "0.0",
+          "Company name": "Hussain Subscription Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "0.0",
+          "Company name": "Diane Grous Ltd.",
+          "Quarter": "Q2"
+        }
+      ],
+      "description": null,
+      "layout": null,
+      "settings": null,
+      "title": "Dot",
+      "type": "dot"
+    },
+    {
+      "attributes": [
+        {
+          "field": "Company name",
+          "role": "element"
+        },
+        {
+          "field": "Amount",
+          "role": "y"
+        },
+        {
+          "field": "Quarter",
+          "from_": "Q1",
+          "role": "series",
+          "to": "Q2"
+        }
+      ],
+      "data": [
+        {
+          "Amount": "520490.0",
+          "Company name": "Blockers Mueller Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "420490.0",
+          "Company name": "Blockers Mueller Inc.",
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "447273.0",
+          "Company name": "Comic Prime Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "347273.0",
+          "Company name": "Comic Prime Inc.",
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "345540.0",
+          "Company name": "Cupar Times Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "245540.0",
+          "Company name": "Cupar Times Inc.",
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "185344.0",
+          "Company name": "Bryson Wirral Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "133427.0",
+          "Company name": "Necessities Caunt Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "129326.0",
+          "Company name": "Maintenence Florence Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "118896.0",
+          "Company name": "Herbert Geotechnical Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "77750.0",
+          "Company name": "Currie Hickinbottom Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "55664.0",
+          "Company name": "Pickering Precision Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "38667.0",
+          "Company name": "Bunting Letterbox Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "25650.0",
+          "Company name": "Stratos Pack Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "24898.0",
+          "Company name": "Wisbech Wallpaper Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "18690.0",
+          "Company name": "Olga Biosystems Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "15352.0",
+          "Company name": "Kingdon Denton Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "13530.0",
+          "Company name": "Sants Caledonia Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "10542.0",
+          "Company name": "Norie Wilts Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "2778.0",
+          "Company name": "Suzanna Batt Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "2516.0",
+          "Company name": "Runner Driven Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "0.0",
+          "Company name": "Jenson Simon Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "0.0",
+          "Company name": "Hussain Subscription Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "0.0",
+          "Company name": "Diane Grous Ltd.",
+          "Quarter": "Q2"
+        }
+      ],
+      "description": null,
+      "layout": null,
+      "settings": null,
+      "title": "Dot with series",
+      "type": "dot"
+    },
+    {
+      "title": "Line examples",
+      "type": "heading"
+    },
+    {
+      "attributes": [
+        {
+          "field": "Company name",
+          "role": "element"
+        },
+        {
+          "field": "Amount",
+          "role": "y"
+        }
+      ],
+      "data": [
+        {
+          "Amount": "100",
+          "Company name": "A",
+          "Target": "100",
+          "Variance": "100"
+        },
+        {
+          "Amount": "200",
+          "Company name": "B",
+          "Target": "100",
+          "Variance": "100"
+        },
+        {
+          "Amount": "100",
+          "Company name": "C",
+          "Target": "300",
+          "Variance": "100"
+        },
+        {
+          "Amount": "50",
+          "Company name": "D",
+          "Target": "100",
+          "Variance": "500"
+        },
+        {
+          "Amount": "-100",
+          "Company name": "E",
+          "Target": "50",
+          "Variance": "100"
+        },
+        {
+          "Amount": "-500",
+          "Company name": "F",
+          "Target": "100",
+          "Variance": "-100"
+        }
+      ],
+      "description": null,
+      "layout": null,
+      "settings": null,
+      "title": "Line",
+      "type": "line"
+    },
+    {
+      "attributes": [
+        {
+          "field": "Company name",
+          "role": "element"
+        },
+        {
+          "field": "Amount",
+          "role": "y"
+        },
+        {
+          "field": "Target",
+          "role": "target"
+        }
+      ],
+      "data": [
+        {
+          "Amount": "100",
+          "Company name": "A",
+          "Target": "100",
+          "Variance": "100"
+        },
+        {
+          "Amount": "200",
+          "Company name": "B",
+          "Target": "100",
+          "Variance": "100"
+        },
+        {
+          "Amount": "100",
+          "Company name": "C",
+          "Target": "300",
+          "Variance": "100"
+        },
+        {
+          "Amount": "50",
+          "Company name": "D",
+          "Target": "100",
+          "Variance": "500"
+        },
+        {
+          "Amount": "-100",
+          "Company name": "E",
+          "Target": "50",
+          "Variance": "100"
+        },
+        {
+          "Amount": "-500",
+          "Company name": "F",
+          "Target": "100",
+          "Variance": "-100"
+        }
+      ],
+      "description": null,
+      "layout": null,
+      "settings": {
+        "display": "target",
+        "targetFillArea": null,
+        "variance": null
+      },
+      "title": "Line with target",
+      "type": "line"
+    },
+    {
+      "attributes": [
+        {
+          "field": "Company name",
+          "role": "element"
+        },
+        {
+          "field": "Amount",
+          "role": "y"
+        },
+        {
+          "field": "Target",
+          "role": "target"
+        }
+      ],
+      "data": [
+        {
+          "Amount": "100",
+          "Company name": "A",
+          "Target": "100",
+          "Variance": "100"
+        },
+        {
+          "Amount": "200",
+          "Company name": "B",
+          "Target": "100",
+          "Variance": "100"
+        },
+        {
+          "Amount": "100",
+          "Company name": "C",
+          "Target": "300",
+          "Variance": "100"
+        },
+        {
+          "Amount": "50",
+          "Company name": "D",
+          "Target": "100",
+          "Variance": "500"
+        },
+        {
+          "Amount": "-100",
+          "Company name": "E",
+          "Target": "50",
+          "Variance": "100"
+        },
+        {
+          "Amount": "-500",
+          "Company name": "F",
+          "Target": "100",
+          "Variance": "-100"
+        }
+      ],
+      "description": null,
+      "layout": null,
+      "settings": {
+        "display": "target",
+        "targetFillArea": "above",
+        "variance": null
+      },
+      "title": "Line with target fill area above",
+      "type": "line"
+    },
+    {
+      "attributes": [
+        {
+          "field": "Company name",
+          "role": "element"
+        },
+        {
+          "field": "Amount",
+          "role": "y"
+        },
+        {
+          "field": "Target",
+          "role": "target"
+        }
+      ],
+      "data": [
+        {
+          "Amount": "100",
+          "Company name": "A",
+          "Target": "100",
+          "Variance": "100"
+        },
+        {
+          "Amount": "200",
+          "Company name": "B",
+          "Target": "100",
+          "Variance": "100"
+        },
+        {
+          "Amount": "100",
+          "Company name": "C",
+          "Target": "300",
+          "Variance": "100"
+        },
+        {
+          "Amount": "50",
+          "Company name": "D",
+          "Target": "100",
+          "Variance": "500"
+        },
+        {
+          "Amount": "-100",
+          "Company name": "E",
+          "Target": "50",
+          "Variance": "100"
+        },
+        {
+          "Amount": "-500",
+          "Company name": "F",
+          "Target": "100",
+          "Variance": "-100"
+        }
+      ],
+      "description": null,
+      "layout": null,
+      "settings": {
+        "display": "target",
+        "targetFillArea": null,
+        "variance": "absolute"
+      },
+      "title": "Line with target absolute variance",
+      "type": "line"
+    },
+    {
+      "attributes": [
+        {
+          "field": "Company name",
+          "role": "element"
+        },
+        {
+          "field": "Amount",
+          "role": "y"
+        },
+        {
+          "field": "Variance",
+          "role": "variance"
+        }
+      ],
+      "data": [
+        {
+          "Amount": "100",
+          "Company name": "A",
+          "Target": "100",
+          "Variance": "100"
+        },
+        {
+          "Amount": "200",
+          "Company name": "B",
+          "Target": "100",
+          "Variance": "100"
+        },
+        {
+          "Amount": "100",
+          "Company name": "C",
+          "Target": "300",
+          "Variance": "100"
+        },
+        {
+          "Amount": "50",
+          "Company name": "D",
+          "Target": "100",
+          "Variance": "500"
+        },
+        {
+          "Amount": "-100",
+          "Company name": "E",
+          "Target": "50",
+          "Variance": "100"
+        },
+        {
+          "Amount": "-500",
+          "Company name": "F",
+          "Target": "100",
+          "Variance": "-100"
+        }
+      ],
+      "description": null,
+      "layout": null,
+      "settings": {
+        "display": "basic",
+        "targetFillArea": null,
+        "variance": "customBar"
+      },
+      "title": "Line with custom variance",
+      "type": "line"
+    },
+    {
+      "title": "Column examples",
+      "type": "heading"
+    },
+    {
+      "attributes": [
+        {
+          "field": "Company name",
+          "role": "element"
+        },
+        {
+          "field": "Amount",
+          "role": "y"
+        }
+      ],
+      "data": [
+        {
+          "Amount": "520490.0",
+          "Company name": "Blockers Mueller Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "420490.0",
+          "Company name": "Blockers Mueller Inc.",
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "447273.0",
+          "Company name": "Comic Prime Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "347273.0",
+          "Company name": "Comic Prime Inc.",
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "345540.0",
+          "Company name": "Cupar Times Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "245540.0",
+          "Company name": "Cupar Times Inc.",
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "185344.0",
+          "Company name": "Bryson Wirral Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "133427.0",
+          "Company name": "Necessities Caunt Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "129326.0",
+          "Company name": "Maintenence Florence Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "118896.0",
+          "Company name": "Herbert Geotechnical Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "77750.0",
+          "Company name": "Currie Hickinbottom Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "55664.0",
+          "Company name": "Pickering Precision Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "38667.0",
+          "Company name": "Bunting Letterbox Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "25650.0",
+          "Company name": "Stratos Pack Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "24898.0",
+          "Company name": "Wisbech Wallpaper Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "18690.0",
+          "Company name": "Olga Biosystems Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "15352.0",
+          "Company name": "Kingdon Denton Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "13530.0",
+          "Company name": "Sants Caledonia Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "10542.0",
+          "Company name": "Norie Wilts Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "2778.0",
+          "Company name": "Suzanna Batt Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "2516.0",
+          "Company name": "Runner Driven Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "0.0",
+          "Company name": "Jenson Simon Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "0.0",
+          "Company name": "Hussain Subscription Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "0.0",
+          "Company name": "Diane Grous Ltd.",
+          "Quarter": "Q2"
+        }
+      ],
+      "description": null,
+      "layout": null,
+      "settings": {
+        "display": "basic",
+        "variance": null
+      },
+      "title": "Column",
+      "type": "column"
+    },
+    {
+      "attributes": [
+        {
+          "field": "Company name",
+          "role": "element"
+        },
+        {
+          "field": "Amount",
+          "role": "y"
+        },
+        {
+          "field": "Quarter",
+          "from_": "Q1",
+          "role": "series",
+          "to": "Q2"
+        }
+      ],
+      "data": [
+        {
+          "Amount": "520490.0",
+          "Company name": "Blockers Mueller Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "420490.0",
+          "Company name": "Blockers Mueller Inc.",
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "447273.0",
+          "Company name": "Comic Prime Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "347273.0",
+          "Company name": "Comic Prime Inc.",
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "345540.0",
+          "Company name": "Cupar Times Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "245540.0",
+          "Company name": "Cupar Times Inc.",
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "185344.0",
+          "Company name": "Bryson Wirral Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "133427.0",
+          "Company name": "Necessities Caunt Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "129326.0",
+          "Company name": "Maintenence Florence Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "118896.0",
+          "Company name": "Herbert Geotechnical Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "77750.0",
+          "Company name": "Currie Hickinbottom Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "55664.0",
+          "Company name": "Pickering Precision Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "38667.0",
+          "Company name": "Bunting Letterbox Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "25650.0",
+          "Company name": "Stratos Pack Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "24898.0",
+          "Company name": "Wisbech Wallpaper Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "18690.0",
+          "Company name": "Olga Biosystems Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "15352.0",
+          "Company name": "Kingdon Denton Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "13530.0",
+          "Company name": "Sants Caledonia Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "10542.0",
+          "Company name": "Norie Wilts Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "2778.0",
+          "Company name": "Suzanna Batt Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "2516.0",
+          "Company name": "Runner Driven Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "0.0",
+          "Company name": "Jenson Simon Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "0.0",
+          "Company name": "Hussain Subscription Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "0.0",
+          "Company name": "Diane Grous Ltd.",
+          "Quarter": "Q2"
+        }
+      ],
+      "description": null,
+      "layout": null,
+      "settings": {
+        "display": "change",
+        "variance": null
+      },
+      "title": "Column with series change",
+      "type": "column"
+    },
+    {
+      "attributes": [
+        {
+          "field": "Company name",
+          "role": "element"
+        },
+        {
+          "field": "Amount",
+          "role": "y"
+        },
+        {
+          "field": "Quarter",
+          "from_": "Q1",
+          "role": "series",
+          "to": "Q2"
+        }
+      ],
+      "data": [
+        {
+          "Amount": "520490.0",
+          "Company name": "Blockers Mueller Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "420490.0",
+          "Company name": "Blockers Mueller Inc.",
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "447273.0",
+          "Company name": "Comic Prime Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "347273.0",
+          "Company name": "Comic Prime Inc.",
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "345540.0",
+          "Company name": "Cupar Times Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "245540.0",
+          "Company name": "Cupar Times Inc.",
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "185344.0",
+          "Company name": "Bryson Wirral Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "133427.0",
+          "Company name": "Necessities Caunt Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "129326.0",
+          "Company name": "Maintenence Florence Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "118896.0",
+          "Company name": "Herbert Geotechnical Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "77750.0",
+          "Company name": "Currie Hickinbottom Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "55664.0",
+          "Company name": "Pickering Precision Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "38667.0",
+          "Company name": "Bunting Letterbox Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "25650.0",
+          "Company name": "Stratos Pack Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "24898.0",
+          "Company name": "Wisbech Wallpaper Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "18690.0",
+          "Company name": "Olga Biosystems Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "15352.0",
+          "Company name": "Kingdon Denton Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "13530.0",
+          "Company name": "Sants Caledonia Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "10542.0",
+          "Company name": "Norie Wilts Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "2778.0",
+          "Company name": "Suzanna Batt Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "2516.0",
+          "Company name": "Runner Driven Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "0.0",
+          "Company name": "Jenson Simon Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "0.0",
+          "Company name": "Hussain Subscription Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "0.0",
+          "Company name": "Diane Grous Ltd.",
+          "Quarter": "Q2"
+        }
+      ],
+      "description": null,
+      "layout": null,
+      "settings": {
+        "display": "target",
+        "variance": null
+      },
+      "title": "Column with series target",
+      "type": "column"
+    },
+    {
+      "attributes": [
+        {
+          "field": "Company name",
+          "role": "element"
+        },
+        {
+          "field": "Amount",
+          "role": "y"
+        },
+        {
+          "field": "Quarter",
+          "from_": "Q1",
+          "role": "series",
+          "to": "Q2"
+        }
+      ],
+      "data": [
+        {
+          "Amount": "520490.0",
+          "Company name": "Blockers Mueller Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "420490.0",
+          "Company name": "Blockers Mueller Inc.",
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "447273.0",
+          "Company name": "Comic Prime Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "347273.0",
+          "Company name": "Comic Prime Inc.",
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "345540.0",
+          "Company name": "Cupar Times Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "245540.0",
+          "Company name": "Cupar Times Inc.",
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "185344.0",
+          "Company name": "Bryson Wirral Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "133427.0",
+          "Company name": "Necessities Caunt Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "129326.0",
+          "Company name": "Maintenence Florence Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "118896.0",
+          "Company name": "Herbert Geotechnical Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "77750.0",
+          "Company name": "Currie Hickinbottom Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "55664.0",
+          "Company name": "Pickering Precision Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "38667.0",
+          "Company name": "Bunting Letterbox Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "25650.0",
+          "Company name": "Stratos Pack Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "24898.0",
+          "Company name": "Wisbech Wallpaper Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "18690.0",
+          "Company name": "Olga Biosystems Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "15352.0",
+          "Company name": "Kingdon Denton Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "13530.0",
+          "Company name": "Sants Caledonia Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "10542.0",
+          "Company name": "Norie Wilts Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "2778.0",
+          "Company name": "Suzanna Batt Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "2516.0",
+          "Company name": "Runner Driven Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "0.0",
+          "Company name": "Jenson Simon Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "0.0",
+          "Company name": "Hussain Subscription Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "0.0",
+          "Company name": "Diane Grous Ltd.",
+          "Quarter": "Q2"
+        }
+      ],
+      "description": null,
+      "layout": null,
+      "settings": {
+        "display": "change",
+        "variance": "absolute"
+      },
+      "title": "Column with series absolute variance",
+      "type": "column"
+    },
+    {
+      "title": "Bar examples",
+      "type": "heading"
+    },
+    {
+      "attributes": [
+        {
+          "field": "Company name",
+          "role": "element"
+        },
+        {
+          "field": "Amount",
+          "role": "x"
+        }
+      ],
+      "data": [
+        {
+          "Amount": "520490.0",
+          "Company name": "Blockers Mueller Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "420490.0",
+          "Company name": "Blockers Mueller Inc.",
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "447273.0",
+          "Company name": "Comic Prime Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "347273.0",
+          "Company name": "Comic Prime Inc.",
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "345540.0",
+          "Company name": "Cupar Times Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "245540.0",
+          "Company name": "Cupar Times Inc.",
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "185344.0",
+          "Company name": "Bryson Wirral Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "133427.0",
+          "Company name": "Necessities Caunt Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "129326.0",
+          "Company name": "Maintenence Florence Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "118896.0",
+          "Company name": "Herbert Geotechnical Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "77750.0",
+          "Company name": "Currie Hickinbottom Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "55664.0",
+          "Company name": "Pickering Precision Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "38667.0",
+          "Company name": "Bunting Letterbox Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "25650.0",
+          "Company name": "Stratos Pack Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "24898.0",
+          "Company name": "Wisbech Wallpaper Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "18690.0",
+          "Company name": "Olga Biosystems Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "15352.0",
+          "Company name": "Kingdon Denton Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "13530.0",
+          "Company name": "Sants Caledonia Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "10542.0",
+          "Company name": "Norie Wilts Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "2778.0",
+          "Company name": "Suzanna Batt Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "2516.0",
+          "Company name": "Runner Driven Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "0.0",
+          "Company name": "Jenson Simon Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "0.0",
+          "Company name": "Hussain Subscription Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "0.0",
+          "Company name": "Diane Grous Ltd.",
+          "Quarter": "Q2"
+        }
+      ],
+      "description": null,
+      "layout": null,
+      "settings": {
+        "display": "basic",
+        "variance": null
+      },
+      "title": "Bar",
+      "type": "bar"
+    },
+    {
+      "attributes": [
+        {
+          "field": "Company name",
+          "role": "element"
+        },
+        {
+          "field": "Amount",
+          "role": "x"
+        },
+        {
+          "field": "Quarter",
+          "from_": "Q1",
+          "role": "series",
+          "to": "Q2"
+        }
+      ],
+      "data": [
+        {
+          "Amount": "520490.0",
+          "Company name": "Blockers Mueller Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "420490.0",
+          "Company name": "Blockers Mueller Inc.",
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "447273.0",
+          "Company name": "Comic Prime Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "347273.0",
+          "Company name": "Comic Prime Inc.",
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "345540.0",
+          "Company name": "Cupar Times Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "245540.0",
+          "Company name": "Cupar Times Inc.",
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "185344.0",
+          "Company name": "Bryson Wirral Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "133427.0",
+          "Company name": "Necessities Caunt Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "129326.0",
+          "Company name": "Maintenence Florence Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "118896.0",
+          "Company name": "Herbert Geotechnical Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "77750.0",
+          "Company name": "Currie Hickinbottom Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "55664.0",
+          "Company name": "Pickering Precision Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "38667.0",
+          "Company name": "Bunting Letterbox Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "25650.0",
+          "Company name": "Stratos Pack Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "24898.0",
+          "Company name": "Wisbech Wallpaper Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "18690.0",
+          "Company name": "Olga Biosystems Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "15352.0",
+          "Company name": "Kingdon Denton Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "13530.0",
+          "Company name": "Sants Caledonia Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "10542.0",
+          "Company name": "Norie Wilts Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "2778.0",
+          "Company name": "Suzanna Batt Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "2516.0",
+          "Company name": "Runner Driven Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "0.0",
+          "Company name": "Jenson Simon Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "0.0",
+          "Company name": "Hussain Subscription Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "0.0",
+          "Company name": "Diane Grous Ltd.",
+          "Quarter": "Q2"
+        }
+      ],
+      "description": null,
+      "layout": null,
+      "settings": {
+        "display": "change",
+        "variance": null
+      },
+      "title": "Bar with series change",
+      "type": "bar"
+    },
+    {
+      "attributes": [
+        {
+          "field": "Company name",
+          "role": "element"
+        },
+        {
+          "field": "Amount",
+          "role": "x"
+        },
+        {
+          "field": "Quarter",
+          "from_": "Q1",
+          "role": "series",
+          "to": "Q2"
+        }
+      ],
+      "data": [
+        {
+          "Amount": "520490.0",
+          "Company name": "Blockers Mueller Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "420490.0",
+          "Company name": "Blockers Mueller Inc.",
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "447273.0",
+          "Company name": "Comic Prime Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "347273.0",
+          "Company name": "Comic Prime Inc.",
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "345540.0",
+          "Company name": "Cupar Times Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "245540.0",
+          "Company name": "Cupar Times Inc.",
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "185344.0",
+          "Company name": "Bryson Wirral Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "133427.0",
+          "Company name": "Necessities Caunt Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "129326.0",
+          "Company name": "Maintenence Florence Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "118896.0",
+          "Company name": "Herbert Geotechnical Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "77750.0",
+          "Company name": "Currie Hickinbottom Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "55664.0",
+          "Company name": "Pickering Precision Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "38667.0",
+          "Company name": "Bunting Letterbox Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "25650.0",
+          "Company name": "Stratos Pack Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "24898.0",
+          "Company name": "Wisbech Wallpaper Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "18690.0",
+          "Company name": "Olga Biosystems Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "15352.0",
+          "Company name": "Kingdon Denton Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "13530.0",
+          "Company name": "Sants Caledonia Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "10542.0",
+          "Company name": "Norie Wilts Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "2778.0",
+          "Company name": "Suzanna Batt Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "2516.0",
+          "Company name": "Runner Driven Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "0.0",
+          "Company name": "Jenson Simon Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "0.0",
+          "Company name": "Hussain Subscription Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "0.0",
+          "Company name": "Diane Grous Ltd.",
+          "Quarter": "Q2"
+        }
+      ],
+      "description": null,
+      "layout": null,
+      "settings": {
+        "display": "target",
+        "variance": null
+      },
+      "title": "Bar with series target",
+      "type": "bar"
+    },
+    {
+      "attributes": [
+        {
+          "field": "Company name",
+          "role": "element"
+        },
+        {
+          "field": "Amount",
+          "role": "x"
+        },
+        {
+          "field": "Quarter",
+          "from_": "Q1",
+          "role": "series",
+          "to": "Q2"
+        }
+      ],
+      "data": [
+        {
+          "Amount": "520490.0",
+          "Company name": "Blockers Mueller Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "420490.0",
+          "Company name": "Blockers Mueller Inc.",
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "447273.0",
+          "Company name": "Comic Prime Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "347273.0",
+          "Company name": "Comic Prime Inc.",
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "345540.0",
+          "Company name": "Cupar Times Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "245540.0",
+          "Company name": "Cupar Times Inc.",
+          "Quarter": "Q1"
+        },
+        {
+          "Amount": "185344.0",
+          "Company name": "Bryson Wirral Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "133427.0",
+          "Company name": "Necessities Caunt Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "129326.0",
+          "Company name": "Maintenence Florence Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "118896.0",
+          "Company name": "Herbert Geotechnical Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "77750.0",
+          "Company name": "Currie Hickinbottom Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "55664.0",
+          "Company name": "Pickering Precision Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "38667.0",
+          "Company name": "Bunting Letterbox Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "25650.0",
+          "Company name": "Stratos Pack Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "24898.0",
+          "Company name": "Wisbech Wallpaper Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "18690.0",
+          "Company name": "Olga Biosystems Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "15352.0",
+          "Company name": "Kingdon Denton Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "13530.0",
+          "Company name": "Sants Caledonia Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "10542.0",
+          "Company name": "Norie Wilts Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "2778.0",
+          "Company name": "Suzanna Batt Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "2516.0",
+          "Company name": "Runner Driven Ltd.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "0.0",
+          "Company name": "Jenson Simon Inc.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "0.0",
+          "Company name": "Hussain Subscription Co.",
+          "Quarter": "Q2"
+        },
+        {
+          "Amount": "0.0",
+          "Company name": "Diane Grous Ltd.",
+          "Quarter": "Q2"
+        }
+      ],
+      "description": null,
+      "layout": null,
+      "settings": {
+        "display": "change",
+        "variance": "absolute"
+      },
+      "title": "Bar with series absolute variance",
+      "type": "bar"
+    }
+  ],
+  "title": "Example story with channel - 2024-02-01"
+}

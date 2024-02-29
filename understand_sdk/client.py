@@ -21,7 +21,7 @@ class Response(BaseModel, Generic[PayloadT]):
 
 
 class UnderstandPublicClient:
-    """ """
+    """Client for Understand Public API"""
 
     def __init__(self, api_key: str, host: str = DEFAULT_HOST):
         self.host = host
@@ -41,7 +41,7 @@ class UnderstandPublicClient:
 
 
 class UnderstandClient:
-    """ """
+    """Client for Understand task/channel API"""
 
     def __init__(self, token: str, host: str = DEFAULT_HOST):
         self.host = host

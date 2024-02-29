@@ -29,6 +29,7 @@ from understand_sdk.story import (
     Slide,
     SlideLayout,
     Story,
+    StoryWithChannels,
     TargetAttribute,
     TargetFillArea,
     Variance,
@@ -39,11 +40,33 @@ from understand_sdk.story import (
 
 
 def create_story(dt: datetime) -> Story:
+    title = "Example story"
     return Story(
-        title=f"Example story - {str(dt.date())}",
+        title=f"{title} - {str(dt.date())}",
         slides=[
             # Cover
-            CoverSlide(title=f"Example story\n{str(dt.date())}"),
+            CoverSlide(title=f"{title}\n{str(dt.date())}"),
+            # Slide variant examples ...
+            *_story_paragraph_slides(),
+            *_story_kpi_slides(),
+            *_story_scatter_slides(),
+            *_story_bubble_slides(),
+            *_story_dot_slides(),
+            *_story_line_slides(),
+            *_story_column_slides(),
+            *_story_bar_slides(),
+        ],
+    )
+
+
+def create_story_with_channels(dt: datetime) -> StoryWithChannels:
+    title = "Example story with channel"
+    return StoryWithChannels(
+        title=f"{title} - {str(dt.date())}",
+        channels=["general", "cashflow"],
+        slides=[
+            # Cover
+            CoverSlide(title=f"{title}\n{str(dt.date())}"),
             # Slide variant examples ...
             *_story_paragraph_slides(),
             *_story_kpi_slides(),
