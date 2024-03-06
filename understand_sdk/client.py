@@ -39,6 +39,14 @@ class UnderstandPublicClient:
         data = Response[CreatedStory](**raw_data)
         return data.payload
 
+    def validate_story(self, story: StoryWithChannels) -> bool:
+        res = self.session.post(
+            f"{self.host}/api/v1/public/stories/validate", json=story.model_dump(exclude_none=True, by_alias=True)
+        )
+        res.raise_for_status()
+
+        return True
+
 
 class UnderstandClient:
     """Client for Understand task/channel API"""
