@@ -5,6 +5,7 @@ check:
 	poetry run pflake8 .
 	poetry run bandit .
 	poetry run safety check
+	poetry run mypy .
 
 ci-check:
 	poetry run black --check .
@@ -13,6 +14,7 @@ ci-check:
 	poetry run pflake8 .
 	poetry run bandit .
 	poetry run safety check
+	poetry run mypy .
 
 ### catch all
 %:
