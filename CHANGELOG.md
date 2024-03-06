@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.1.2
+
+Date of release: 2024-03-06
+
+### Features
+
+- Added validate story method to Public client
+
 ## v0.1.1
 
 Date of release: 2024-02-29
