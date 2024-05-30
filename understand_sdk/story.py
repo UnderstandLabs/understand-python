@@ -78,8 +78,6 @@ class SeriesAttribute(Attribute):
 class Variance(str, Enum):
     ABSOLUTE = "absolute"
     RELATIVE = "relative"
-    CUSTOM_BAR = "customBar"
-    CUSTOM_DIVERGING_BARS = "customDivergingBars"
 
 
 class TargetFillArea(str, Enum):

@@ -895,66 +895,6 @@
         {
           "field": "Amount",
           "role": "y"
-        },
-        {
-          "field": "Variance",
-          "role": "variance"
-        }
-      ],
-      "data": [
-        {
-          "Amount": "100",
-          "Company name": "A",
-          "Target": "100",
-          "Variance": "100"
-        },
-        {
-          "Amount": "200",
-          "Company name": "B",
-          "Target": "100",
-          "Variance": "100"
-        },
-        {
-          "Amount": "100",
-          "Company name": "C",
-          "Target": "300",
-          "Variance": "100"
-        },
-        {
-          "Amount": "50",
-          "Company name": "D",
-          "Target": "100",
-          "Variance": "500"
-        },
-        {
-          "Amount": "-100",
-          "Company name": "E",
-          "Target": "50",
-          "Variance": "100"
-        },
-        {
-          "Amount": "-500",
-          "Company name": "F",
-          "Target": "100",
-          "Variance": "-100"
-        }
-      ],
-      "settings": {
-        "display": "basic",
-        "variance": "customBar"
-      },
-      "title": "Line with custom variance",
-      "type": "line"
-    },
-    {
-      "attributes": [
-        {
-          "field": "Company name",
-          "role": "element"
-        },
-        {
-          "field": "Amount",
-          "role": "y"
         }
       ],
       "data": [

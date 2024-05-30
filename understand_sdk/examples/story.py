@@ -33,7 +33,6 @@ from understand_sdk.story import (
     TargetAttribute,
     TargetFillArea,
     Variance,
-    VarianceAttribute,
     XAttribute,
     YAttribute,
 )
@@ -276,16 +275,6 @@ def _story_line_slides() -> List[Slide]:
                 ElementAttribute(field="Company name"),
                 YAttribute(field="Amount"),
                 TargetAttribute(field="Target"),
-            ],
-            data=EXAMPLE_DATA_LINE,
-        ),
-        LineSlide(
-            title="Line with custom variance",
-            settings=LineSlideSettings(variance=Variance.CUSTOM_BAR),
-            attributes=[
-                ElementAttribute(field="Company name"),
-                YAttribute(field="Amount"),
-                VarianceAttribute(field="Variance"),
             ],
             data=EXAMPLE_DATA_LINE,
         ),
