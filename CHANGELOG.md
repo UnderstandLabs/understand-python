@@ -1,5 +1,15 @@
 # Changelog
 
+
+## v0.1.3
+
+Date of release: 2024-05-30
+
+### Clean ups
+
+- Removing ability to specify custom variances
+
+
 ## v0.1.2
 
 Date of release: 2024-03-06
