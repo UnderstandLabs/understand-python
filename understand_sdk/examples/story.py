@@ -296,7 +296,7 @@ def _story_column_slides() -> List[Slide]:
         HeadingSlide(title="Column examples"),
         ColumnSlide(
             title="Column",
-            settings=ColumnSlideSettings(display=ColumnSlideDisplay.BASIC),
+            settings=ColumnSlideSettings(display=ColumnSlideDisplay.VALUE),
             attributes=[
                 ElementAttribute(field="Company name"),
                 YAttribute(field="Amount"),
@@ -305,7 +305,7 @@ def _story_column_slides() -> List[Slide]:
         ),
         ColumnSlide(
             title="Column with series change",
-            settings=ColumnSlideSettings(display=ColumnSlideDisplay.CHANGE),
+            settings=ColumnSlideSettings(display=ColumnSlideDisplay.SERIES),
             attributes=[
                 ElementAttribute(field="Company name"),
                 YAttribute(field="Amount"),
@@ -314,18 +314,18 @@ def _story_column_slides() -> List[Slide]:
             data=EXAMPLE_DATA_GENERIC,
         ),
         ColumnSlide(
-            title="Column with series target",
+            title="Column with target",
             settings=ColumnSlideSettings(display=ColumnSlideDisplay.TARGET),
             attributes=[
                 ElementAttribute(field="Company name"),
                 YAttribute(field="Amount"),
-                SeriesAttribute(field="Quarter", from_="Q1", to="Q2"),
+                TargetAttribute(field="Amount"),
             ],
             data=EXAMPLE_DATA_GENERIC,
         ),
         ColumnSlide(
             title="Column with series absolute variance",
-            settings=ColumnSlideSettings(display=ColumnSlideDisplay.CHANGE, variance=Variance.ABSOLUTE),
+            settings=ColumnSlideSettings(display=ColumnSlideDisplay.SERIES, variance=Variance.ABSOLUTE),
             attributes=[
                 ElementAttribute(field="Company name"),
                 YAttribute(field="Amount"),
@@ -341,7 +341,7 @@ def _story_bar_slides() -> List[Slide]:
         HeadingSlide(title="Bar examples"),
         BarSlide(
             title="Bar",
-            settings=BarSlideSettings(display=BarSlideDisplay.BASIC),
+            settings=BarSlideSettings(display=BarSlideDisplay.VALUE),
             attributes=[
                 ElementAttribute(field="Company name"),
                 XAttribute(field="Amount"),
@@ -350,7 +350,7 @@ def _story_bar_slides() -> List[Slide]:
         ),
         BarSlide(
             title="Bar with series change",
-            settings=BarSlideSettings(display=BarSlideDisplay.CHANGE),
+            settings=BarSlideSettings(display=BarSlideDisplay.SERIES),
             attributes=[
                 ElementAttribute(field="Company name"),
                 XAttribute(field="Amount"),
@@ -359,18 +359,18 @@ def _story_bar_slides() -> List[Slide]:
             data=EXAMPLE_DATA_GENERIC,
         ),
         BarSlide(
-            title="Bar with series target",
+            title="Bar with target",
             settings=BarSlideSettings(display=BarSlideDisplay.TARGET),
             attributes=[
                 ElementAttribute(field="Company name"),
                 XAttribute(field="Amount"),
-                SeriesAttribute(field="Quarter", from_="Q1", to="Q2"),
+                TargetAttribute(field="Amount"),
             ],
             data=EXAMPLE_DATA_GENERIC,
         ),
         BarSlide(
             title="Bar with series absolute variance",
-            settings=BarSlideSettings(display=BarSlideDisplay.CHANGE, variance=Variance.ABSOLUTE),
+            settings=BarSlideSettings(display=BarSlideDisplay.SERIES, variance=Variance.ABSOLUTE),
             attributes=[
                 ElementAttribute(field="Company name"),
                 XAttribute(field="Amount"),

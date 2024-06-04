@@ -1078,7 +1078,7 @@
         }
       ],
       "settings": {
-        "display": "basic"
+        "display": "value"
       },
       "title": "Column",
       "type": "column"
@@ -1223,7 +1223,7 @@
         }
       ],
       "settings": {
-        "display": "change"
+        "display": "series"
       },
       "title": "Column with series change",
       "type": "column"
@@ -1513,7 +1513,7 @@
         }
       ],
       "settings": {
-        "display": "change",
+        "display": "series",
         "variance": "absolute"
       },
       "title": "Column with series absolute variance",
@@ -1657,7 +1657,7 @@
         }
       ],
       "settings": {
-        "display": "basic"
+        "display": "value"
       },
       "title": "Bar",
       "type": "bar"
@@ -1802,7 +1802,7 @@
         }
       ],
       "settings": {
-        "display": "change"
+        "display": "series"
       },
       "title": "Bar with series change",
       "type": "bar"
@@ -2092,7 +2092,7 @@
         }
       ],
       "settings": {
-        "display": "change",
+        "display": "series",
         "variance": "absolute"
       },
       "title": "Bar with series absolute variance",

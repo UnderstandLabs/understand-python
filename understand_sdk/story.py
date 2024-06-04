@@ -186,27 +186,22 @@ class LineSlide(ChartSlide):
 
 
 class BarSlideDisplay(str, Enum):
-    BASIC = "basic"
-    CHANGE = "change"
+    VALUE = "value"
+    BOX = "box"
+    SERIES = "series"
+    INTERVAL = "interval"
     TARGET = "target"
 
 
 class BarSlideSettings(BaseModel):
     variance: Optional[Variance] = None
-    display: Optional[BarSlideDisplay] = BarSlideDisplay.BASIC
+    display: Optional[BarSlideDisplay] = BarSlideDisplay.VALUE
 
 
 class BarSlide(ChartSlide):
     type: Literal["bar"] = "bar"
     settings: Optional[BarSlideSettings] = None
-    attributes: List[
-        Union[
-            ElementAttribute,
-            XAttribute,
-            SeriesAttribute,
-            VarianceAttribute,
-        ]
-    ]
+    attributes: List[Union[ElementAttribute, XAttribute, SeriesAttribute, VarianceAttribute, TargetAttribute]]
 
 
 #
@@ -215,27 +210,23 @@ class BarSlide(ChartSlide):
 
 
 class ColumnSlideDisplay(str, Enum):
-    BASIC = "basic"
-    CHANGE = "change"
+    VALUE = "value"
+    BOX = "box"
+    SERIES = "series"
+    WATERFALL = "waterfall"
+    INTERVAL = "interval"
     TARGET = "target"
 
 
 class ColumnSlideSettings(BaseModel):
     variance: Optional[Variance] = None
-    display: Optional[ColumnSlideDisplay] = ColumnSlideDisplay.BASIC
+    display: Optional[ColumnSlideDisplay] = ColumnSlideDisplay.VALUE
 
 
 class ColumnSlide(ChartSlide):
     type: Literal["column"] = "column"
     settings: Optional[ColumnSlideSettings] = None
-    attributes: List[
-        Union[
-            ElementAttribute,
-            YAttribute,
-            SeriesAttribute,
-            VarianceAttribute,
-        ]
-    ]
+    attributes: List[Union[ElementAttribute, YAttribute, SeriesAttribute, VarianceAttribute, TargetAttribute]]
 
 
 #
