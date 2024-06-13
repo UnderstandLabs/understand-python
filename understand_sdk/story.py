@@ -193,9 +193,18 @@ class BarSlideDisplay(str, Enum):
     TARGET = "target"
 
 
+class BarSlideSeriesDisplay(str, Enum):
+    CHANGE = "change"
+    GROUP = "group"
+    STACKED = "stacked"
+    FULL_STACKED = "fullStacked"
+    COMPARE = "compare"
+
+
 class BarSlideSettings(BaseModel):
     variance: Optional[Variance] = None
     display: Optional[BarSlideDisplay] = BarSlideDisplay.VALUE
+    series_display: Optional[BarSlideSeriesDisplay] = Field(default=None, alias="seriesDisplay")
 
 
 class BarSlide(ChartSlide):
@@ -218,9 +227,18 @@ class ColumnSlideDisplay(str, Enum):
     TARGET = "target"
 
 
+class ColumnSlideSeriesDisplay(str, Enum):
+    CHANGE = "change"
+    GROUP = "group"
+    STACKED = "stacked"
+    FULL_STACKED = "fullStacked"
+    COMPARE = "compare"
+
+
 class ColumnSlideSettings(BaseModel):
     variance: Optional[Variance] = None
     display: Optional[ColumnSlideDisplay] = ColumnSlideDisplay.VALUE
+    series_display: Optional[ColumnSlideSeriesDisplay] = Field(default=None, alias="seriesDisplay")
 
 
 class ColumnSlide(ChartSlide):
