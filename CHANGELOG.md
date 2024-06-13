@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.1.5
+
+Date of release: 2024-06-13
+
+### Features
+
+- Added support for the Column and Bar series display option
+
 ## v0.1.4
 
 Date of release: 2024-06-04
