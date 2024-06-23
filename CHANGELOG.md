@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.1.6
+
+Date of release: 2024-06-23
+
+### Tweaks
+
+- Refactoring the Line slide fill the area settings option
+
 ## v0.1.5
 
 Date of release: 2024-06-13

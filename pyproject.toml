@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "understand-sdk"
-version = "0.1.5"
+version = "0.1.6"
 description = "Python client for UnderstandLabs"
 authors = ["Understandlabs.com Team <it@understandlabs.com>"]
 license = "MIT"
