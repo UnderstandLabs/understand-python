@@ -821,9 +821,73 @@
       ],
       "settings": {
         "display": "target",
-        "targetFillArea": "above"
+        "fillDelta": {
+          "display": "below"
+        }
       },
-      "title": "Line with target fill area above",
+      "title": "Line with target fill area below",
+      "type": "line"
+    },
+    {
+      "attributes": [
+        {
+          "field": "Company name",
+          "role": "element"
+        },
+        {
+          "field": "Amount",
+          "role": "y"
+        },
+        {
+          "field": "Target",
+          "role": "target"
+        }
+      ],
+      "data": [
+        {
+          "Amount": "100",
+          "Company name": "A",
+          "Target": "100",
+          "Variance": "100"
+        },
+        {
+          "Amount": "200",
+          "Company name": "B",
+          "Target": "100",
+          "Variance": "100"
+        },
+        {
+          "Amount": "100",
+          "Company name": "C",
+          "Target": "300",
+          "Variance": "100"
+        },
+        {
+          "Amount": "50",
+          "Company name": "D",
+          "Target": "100",
+          "Variance": "500"
+        },
+        {
+          "Amount": "-100",
+          "Company name": "E",
+          "Target": "50",
+          "Variance": "100"
+        },
+        {
+          "Amount": "-500",
+          "Company name": "F",
+          "Target": "100",
+          "Variance": "-100"
+        }
+      ],
+      "settings": {
+        "display": "target",
+        "fillDelta": {
+          "display": "both"
+        }
+      },
+      "title": "Line with target fill area both",
       "type": "line"
     },
     {
@@ -1239,10 +1303,8 @@
           "role": "y"
         },
         {
-          "field": "Quarter",
-          "from": "Q1",
-          "role": "series",
-          "to": "Q2"
+          "field": "Amount",
+          "role": "target"
         }
       ],
       "data": [
@@ -1370,7 +1432,7 @@
       "settings": {
         "display": "target"
       },
-      "title": "Column with series target",
+      "title": "Column with target",
       "type": "column"
     },
     {
@@ -1818,10 +1880,8 @@
           "role": "x"
         },
         {
-          "field": "Quarter",
-          "from": "Q1",
-          "role": "series",
-          "to": "Q2"
+          "field": "Amount",
+          "role": "target"
         }
       ],
       "data": [
@@ -1949,7 +2009,7 @@
       "settings": {
         "display": "target"
       },
-      "title": "Bar with series target",
+      "title": "Bar with target",
       "type": "bar"
     },
     {

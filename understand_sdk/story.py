@@ -80,12 +80,6 @@ class Variance(str, Enum):
     RELATIVE = "relative"
 
 
-class TargetFillArea(str, Enum):
-    ABOVE = "above"
-    BELOW = "below"
-    BOTH = "both"
-
-
 #
 # Text slides
 #
@@ -156,15 +150,27 @@ class KpiSlide(SlideWithLayout):
 
 
 class LineSlideDisplay(str, Enum):
-    BASIC = "basic"
-    CHANGE = "change"
+    VALUE = "value"
+    SERIES = "series"
     TARGET = "target"
+    INTERVAL = "interval"
+
+
+class LineSlideFillDeltaDisplay(str, Enum):
+    NONE = "none"
+    ABOVE = "above"
+    BELOW = "below"
+    BOTH = "both"
+
+
+class LineSlideFillDelta(BaseModel):
+    display: LineSlideFillDeltaDisplay
 
 
 class LineSlideSettings(BaseModel):
     variance: Optional[Variance] = None
-    display: Optional[LineSlideDisplay] = LineSlideDisplay.BASIC
-    targetFillArea: Optional[TargetFillArea] = None
+    display: Optional[LineSlideDisplay] = LineSlideDisplay.VALUE
+    fill_delta: Optional[LineSlideFillDelta] = Field(default=None, alias="fillDelta")
 
 
 class LineSlide(ChartSlide):
