@@ -21,6 +21,8 @@ from understand_sdk.story import (
     KpiTarget,
     LineSlide,
     LineSlideDisplay,
+    LineSlideFillDelta,
+    LineSlideFillDeltaDisplay,
     LineSlideSettings,
     ParagraphSlide,
     ScatterSlide,
@@ -31,7 +33,6 @@ from understand_sdk.story import (
     Story,
     StoryWithChannels,
     TargetAttribute,
-    TargetFillArea,
     Variance,
     XAttribute,
     YAttribute,
@@ -259,8 +260,22 @@ def _story_line_slides() -> List[Slide]:
             data=EXAMPLE_DATA_LINE,
         ),
         LineSlide(
-            title="Line with target fill area above",
-            settings=LineSlideSettings(display=LineSlideDisplay.TARGET, targetFillArea=TargetFillArea.ABOVE),
+            title="Line with target fill area below",
+            settings=LineSlideSettings(
+                display=LineSlideDisplay.TARGET, fill_delta=LineSlideFillDelta(display=LineSlideFillDeltaDisplay.BELOW)
+            ),
+            attributes=[
+                ElementAttribute(field="Company name"),
+                YAttribute(field="Amount"),
+                TargetAttribute(field="Target"),
+            ],
+            data=EXAMPLE_DATA_LINE,
+        ),
+        LineSlide(
+            title="Line with target fill area both",
+            settings=LineSlideSettings(
+                display=LineSlideDisplay.TARGET, fill_delta=LineSlideFillDelta(display=LineSlideFillDeltaDisplay.BOTH)
+            ),
             attributes=[
                 ElementAttribute(field="Company name"),
                 YAttribute(field="Amount"),
