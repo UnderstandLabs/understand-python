@@ -1005,6 +1005,102 @@
       "type": "line"
     },
     {
+      "attributes": [
+        {
+          "field": "Company name",
+          "role": "element"
+        },
+        {
+          "field": "Amount",
+          "role": "y"
+        },
+        {
+          "field": "Year",
+          "from": "2001",
+          "role": "series",
+          "to": "2003"
+        }
+      ],
+      "data": [
+        {
+          "Amount": "100",
+          "Company name": "A",
+          "Year": "2001"
+        },
+        {
+          "Amount": "150",
+          "Company name": "A",
+          "Year": "2002"
+        },
+        {
+          "Amount": "200",
+          "Company name": "B",
+          "Year": "2001"
+        },
+        {
+          "Amount": "250",
+          "Company name": "B",
+          "Year": "2002"
+        },
+        {
+          "Amount": "100",
+          "Company name": "C",
+          "Year": "2001"
+        },
+        {
+          "Amount": "150",
+          "Company name": "C",
+          "Year": "2002"
+        },
+        {
+          "Amount": "500",
+          "Company name": "D",
+          "Year": "2001"
+        },
+        {
+          "Amount": "600",
+          "Company name": "D",
+          "Year": "2002"
+        },
+        {
+          "Amount": "-100",
+          "Company name": "E",
+          "Year": "2001"
+        },
+        {
+          "Amount": "-190",
+          "Company name": "E",
+          "Year": "2002"
+        },
+        {
+          "Amount": "-50",
+          "Company name": "E",
+          "Year": "2003"
+        },
+        {
+          "Amount": "-500",
+          "Company name": "F",
+          "Year": "2001"
+        },
+        {
+          "Amount": "-590",
+          "Company name": "F",
+          "Year": "2002"
+        },
+        {
+          "Amount": "-790",
+          "Company name": "F",
+          "Year": "2003"
+        }
+      ],
+      "description": "**Markdown** description",
+      "settings": {
+        "display": "series"
+      },
+      "title": "Line - multi-series",
+      "type": "line"
+    },
+    {
       "title": "Column examples",
       "type": "heading"
     },

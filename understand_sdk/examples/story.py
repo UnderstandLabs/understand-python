@@ -303,6 +303,17 @@ def _story_line_slides() -> List[Slide]:
             ],
             data=EXAMPLE_DATA_LINE,
         ),
+        LineSlide(
+            title="Line - multi-series",
+            description="**Markdown** description",
+            settings=LineSlideSettings(display=LineSlideDisplay.SERIES),
+            attributes=[
+                ElementAttribute(field="Company name"),
+                YAttribute(field="Amount"),
+                SeriesAttribute(field="Year", from_="2001", to="2003"),
+            ],
+            data=EXAMPLE_DATA_LINE_WITH_SERIES,
+        ),
     ]
 
 
@@ -430,6 +441,23 @@ EXAMPLE_DATA_LINE = [
     {"Company name": "D", "Amount": "50", "Target": "100", "Variance": "500"},
     {"Company name": "E", "Amount": "-100", "Target": "50", "Variance": "100"},
     {"Company name": "F", "Amount": "-500", "Target": "100", "Variance": "-100"},
+]
+
+EXAMPLE_DATA_LINE_WITH_SERIES = [
+    {"Company name": "A", "Amount": "100", "Year": "2001"},
+    {"Company name": "A", "Amount": "150", "Year": "2002"},
+    {"Company name": "B", "Amount": "200", "Year": "2001"},
+    {"Company name": "B", "Amount": "250", "Year": "2002"},
+    {"Company name": "C", "Amount": "100", "Year": "2001"},
+    {"Company name": "C", "Amount": "150", "Year": "2002"},
+    {"Company name": "D", "Amount": "500", "Year": "2001"},
+    {"Company name": "D", "Amount": "600", "Year": "2002"},
+    {"Company name": "E", "Amount": "-100", "Year": "2001"},
+    {"Company name": "E", "Amount": "-190", "Year": "2002"},
+    {"Company name": "E", "Amount": "-50", "Year": "2003"},
+    {"Company name": "F", "Amount": "-500", "Year": "2001"},
+    {"Company name": "F", "Amount": "-590", "Year": "2002"},
+    {"Company name": "F", "Amount": "-790", "Year": "2003"},
 ]
 
 EXAMPLE_DATA_BUBBLE = [

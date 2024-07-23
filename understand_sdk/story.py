@@ -176,14 +176,7 @@ class LineSlideSettings(BaseModel):
 class LineSlide(ChartSlide):
     type: Literal["line"] = "line"
     settings: Optional[LineSlideSettings] = None
-    attributes: List[
-        Union[
-            ElementAttribute,
-            YAttribute,
-            TargetAttribute,
-            VarianceAttribute,
-        ]
-    ]
+    attributes: List[Union[ElementAttribute, YAttribute, TargetAttribute, VarianceAttribute, SeriesAttribute]]
 
 
 #
