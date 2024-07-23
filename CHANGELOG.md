@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.1.7
+
+Date of release: 2024-07-23
+
+### Features
+
+- Added support for multi-series line chart
+
 ## v0.1.6
 
 Date of release: 2024-06-23
