@@ -301,6 +301,7 @@ class BubbleSlide(ChartSlide):
 
 class Story(BaseModel):
     title: Optional[str] = None
+    public: Optional[bool] = False
     slides: List[
         Union[
             CoverSlide,

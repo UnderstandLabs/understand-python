@@ -3,6 +3,7 @@
     "general",
     "cashflow"
   ],
+  "public": false,
   "slides": [
     {
       "title": "Example story with channel\n2024-02-01",
