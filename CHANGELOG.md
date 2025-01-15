@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.1.8
+
+Date of release: 2025-01-15
+
+### Features
+
+- Added support to make story a public story
+
 ## v0.1.7
 
 Date of release: 2024-07-23
