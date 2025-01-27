@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.1.9
+
+Date of release: 2025-01-27
+
+### Features
+
+- Support py3.9 and higher
+
 ## v0.1.8
 
 Date of release: 2025-01-15
